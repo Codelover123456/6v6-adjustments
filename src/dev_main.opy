@@ -11,7 +11,6 @@ rule "Copyright (c) 2024 Overwatch 1 Emulator & 6v6 Adjustments. See github.com/
 #!include "lobby/dev_lobby.opy"
 
 # Useful functions
-# !include "utilities/debug.opy"
 #!include "utilities/custom_hp.opy"
 #!include "utilities/hero_init.opy"
 #!include "utilities/hero_reset.opy"
@@ -71,3 +70,6 @@ rule "Copyright (c) 2024 Overwatch 1 Emulator & 6v6 Adjustments. See github.com/
 #!include "heroes/wreckingball/init.opy"
 #!include "heroes/zarya/init.opy"
 #!include "heroes/zenyatta/init.opy"
+
+# Include debug at the end so any variable can be viewed
+#!include "utilities/debug.opy"
