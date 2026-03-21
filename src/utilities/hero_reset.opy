@@ -119,6 +119,7 @@ def resetStats():
     eventPlayer.setHealingReceived(100)
     eventPlayer.setKnockbackReceived(100)
     eventPlayer.setKnockbackDealt(100)
+    stopDamageModification(getLastDamageModification())
     # eventPlayer.setGravity(100)
     # eventPlayer.setJumpVerticalSpeed(100) # might be responsible for jump bug
     setCurrentSpeed(eventPlayer, 1)

@@ -1,9 +1,9 @@
 #!mainFile "../../main.opy"
 
-playervar primal_pvar
-#!defineMember _primal_exit_health primal_pvar[0]
-#!defineMember _primal_exit_armor primal_pvar[1]
-#!defineMember _primal_hp_id primal_pvar[2]
+# playervar primal_pvar
+# !defineMember _primal_exit_health primal_pvar[0]
+# !defineMember _primal_exit_armor primal_pvar[1]
+# !defineMember _primal_hp_id primal_pvar[2]
 
 
 # rule "[winston/primal.opy]: Remove bonus Primal Rage health":

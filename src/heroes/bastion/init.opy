@@ -13,13 +13,6 @@ def initBastion():
         removeSelfHealing()
 
     eventPlayer.startScalingSize(0.96, true)
+    startDamageModification(eventPlayer, eventPlayer, percent(0.5))
 
     eventPlayer.hero_initialized = true
-
-
-rule "[bastion/init.opy]: Reduce grenade self-damage":
-    @Event playerDealtDamage
-    @Hero bastion
-    @Condition attacker == victim
-    
-    heal(victim, null, eventDamage - (eventDamage*0.5))

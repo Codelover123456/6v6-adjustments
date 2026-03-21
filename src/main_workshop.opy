@@ -1,10 +1,11 @@
-rule "Copyright (c) 2024 Overwatch 1 Emulator & 6v6 Adjustments. See github.com/6v6-Adjustments/6v6-adjustments for license to use this code.":
+rule "Copyright (c) 2026 Overwatch 1 Emulator & 6v6 Adjustments. See github.com/6v6-Adjustments/6v6-adjustments for license to use this code.":
     disableInspector()
 
 # Useful constants and macros
-#!include "constants/adj_constants.opy"
-#!include "constants/ow2_constants.opy"
-#!include "utilities/macro_functions.opy"
+#!include "common/constants/env.opy"
+#!include "common/constants/constants/adj_constants.opy"
+#!include "common/constants/constants/ow2_constants.opy"
+#!include "common/constants/macro_functions.opy"
 
 # Custom game lobby settings
 # !include "lobby/lobby.opy"
