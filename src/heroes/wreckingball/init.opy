@@ -13,7 +13,7 @@ def initWreckingBall():
         ADJ_WRECKING_BALL_ARMOR_DUPLICATE if eventPlayer.isDuplicatingAHero() else ADJ_WRECKING_BALL_ARMOR, 
         0)
     setUltCost(ADJ_WRECKING_BALL_ULT_COST)
-    removeTankPassive()
+    #removeTankPassive()
     removeSelfHealing()
 
     setBaseDamage(eventPlayer, ADJ_WRECKING_BALL_MINEFIELD_DAMAGE/OW2_WRECKING_BALL_MINEFIELD_DAMAGE)

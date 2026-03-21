@@ -11,7 +11,7 @@ def initRamattra():
         ADJ_RAMATTRA_ARMOR_DUPLICATE if eventPlayer.isDuplicatingAHero() else ADJ_RAMATTRA_ARMOR,
         0)
     setUltCost(ADJ_RAMATTRA_ULT_COST)
-    removeTankPassive()
+    #removeTankPassive()
     removeSelfHealing()
 
     setBaseDamage(eventPlayer, ADJ_RAMATTRA_ACCELERATOR_DAMAGE/OW2_RAMATTRA_ACCELERATOR_DAMAGE)

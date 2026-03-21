@@ -18,7 +18,7 @@ def initMauga():
     eventPlayer.setAmmo(0, ADJ_MAUGA_AMMO)
     eventPlayer.setMaxAmmo(0, ADJ_MAUGA_AMMO)
 
-    removeTankPassive()
+    #removeTankPassive()
     if not eventPlayer.isDuplicatingAHero():
         removeSelfHealing()
     setBaseDamage(eventPlayer, ADJ_MAUGA_CHAINGUN_DAMAGE/OW2_MAUGA_CHAINGUN_DAMAGE)

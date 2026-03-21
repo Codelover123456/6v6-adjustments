@@ -13,7 +13,7 @@ def initOrisa():
         ADJ_ORISA_ARMOR_DUPLICATE if eventPlayer.isDuplicatingAHero() else ADJ_ORISA_ARMOR, 
         0)
     setUltCost(ADJ_ORISA_ULT_COST)
-    removeTankPassive()
+    #removeTankPassive()
     if not eventPlayer.isDuplicatingAHero():
         removeSelfHealing()
 

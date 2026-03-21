@@ -12,7 +12,7 @@ def initRoadhog():
         0,
         0)
     setUltCost(ADJ_ROADHOG_ULT_COST)
-    removeTankPassive()
+    #removeTankPassive()
     removeRegenPassive()
     
     if not eventPlayer.isDuplicatingAHero():

@@ -14,7 +14,7 @@ def initDoomfist():
         0, 
         0)
     setUltCost(ADJ_DOOMFIST_ULT_COST)
-    removeTankPassive()
+    #removeTankPassive()
 
     if not eventPlayer.isDuplicatingAHero():
         removeSelfHealing()

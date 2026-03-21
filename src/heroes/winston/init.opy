@@ -18,7 +18,7 @@ def initWinston():
         true)
     eventPlayer._primal_hp_id = getLastCreatedHealthPool()
     setUltCost(ADJ_WINSTON_ULT_COST)
-    removeTankPassive()
+    #removeTankPassive()
     removeSelfHealing()
     setBaseDamage(eventPlayer, ADJ_WINSTON_TESLA_DAMAGE/OW2_WINSTON_TESLA_DAMAGE)
 

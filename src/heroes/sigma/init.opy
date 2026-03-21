@@ -13,7 +13,7 @@ def initSigma():
         ADJ_SIGMA_SHIELDS)
     setUltCost(
         ADJ_SIGMA_ULT_COST)
-    removeTankPassive()
+    #removeTankPassive()
     removeSelfHealing()
 
     if not eventPlayer.isDuplicatingAHero():

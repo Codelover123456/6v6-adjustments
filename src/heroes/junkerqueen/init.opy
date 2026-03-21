@@ -12,7 +12,7 @@ def initJunkerQueen():
     setCustomHp(
         ADJ_JUNKERQUEEN_HEALTH_DUPLICATE if eventPlayer.isDuplicatingAHero() else ADJ_JUNKERQUEEN_HEALTH, 0, 0)
     setUltCost(ADJ_JUNKERQUEEN_ULT_COST)
-    removeTankPassive()
+    #removeTankPassive()
     removeRegenPassive()
 
     setBaseDamage(eventPlayer, ADJ_JUNKERQUEEN_SCATTER_GUN_DAMAGE / OW2_JUNKERQUEEN_SCATTER_GUN_DAMAGE)

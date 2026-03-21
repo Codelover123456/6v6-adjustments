@@ -14,7 +14,7 @@ def initZarya():
     )
     setUltCost(ADJ_ZARYA_ULT_COST)
 
-    removeTankPassive()
+    #removeTankPassive()
     removeSelfHealing()
 
     setBaseDamage(eventPlayer, ADJ_ZARYA_CANNON_DAMAGE_MAX/OW2_ZARYA_CANNON_DAMAGE_MAX)

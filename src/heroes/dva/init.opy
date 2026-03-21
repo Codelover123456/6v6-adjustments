@@ -24,7 +24,7 @@ def initDva():
         0)
 
     setUltCost(ADJ_DVA_ULT_COST)
-    removeTankPassive()
+    #removeTankPassive()
     eventPlayer.hero_initialized = true
 
 

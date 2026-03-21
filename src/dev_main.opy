@@ -23,7 +23,7 @@ rule "Copyright (c) 2024 Overwatch 1 Emulator & 6v6 Adjustments. See github.com/
 #!include "passives/damage/damage_passive.opy"
 # Remove tank passive
 #!include "passives/tank/ult_charge.opy"
-#!include "passives/tank/knockback.opy"
+# !include "passives/tank/knockback.opy"
 # Remove support passive
 #!include "passives/support/self_heal.opy"
 
