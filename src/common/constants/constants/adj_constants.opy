@@ -1,5 +1,3 @@
-#!mainFile "../dev_main.opy"
-
 
 # Universal
 #!define ADJ_TANK_KNOCKBACK_REDUCTION 0.02

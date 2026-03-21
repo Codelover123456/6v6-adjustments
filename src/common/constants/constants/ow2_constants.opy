@@ -1,4 +1,3 @@
-#!mainFile "../dev_main.opy"
 
 # Misc
 #!define MIN_DAMAGE 0.000001
