@@ -38,6 +38,13 @@ rule "[utilities/debug.opy]: player debug (Top Right)":
 
     hudHeader(eventPlayer, "Event Player", HudPosition.RIGHT, 0, Color.WHITE, HudReeval.STRING)
     hudSubheader(eventPlayer, "regen_passive_timer = {}".format(eventPlayer.regen_passive_timer), HudPosition.RIGHT, 1, Color.WHITE, HudReeval.STRING)
+    hudSubheader(eventPlayer, "_hp_health = {}".format(eventPlayer._hp_health), HudPosition.RIGHT, 1, Color.WHITE, HudReeval.STRING)
+    hudSubheader(eventPlayer, "_hp_armor = {}".format(eventPlayer._hp_armor), HudPosition.RIGHT, 1, Color.WHITE, HudReeval.STRING)
+    hudSubheader(eventPlayer, "_hp_shields = {}".format(eventPlayer._hp_shields), HudPosition.RIGHT, 1, Color.WHITE, HudReeval.STRING)
+    hudSubheader(eventPlayer, "_hp_health_ow2 = {}".format(eventPlayer._hp_health_ow2), HudPosition.RIGHT, 1, Color.WHITE, HudReeval.STRING)
+    hudSubheader(eventPlayer, "_hp_armor_ow2 = {}".format(eventPlayer._hp_armor_ow2), HudPosition.RIGHT, 1, Color.WHITE, HudReeval.STRING)
+    hudSubheader(eventPlayer, "_hp_shields_ow2 = {}".format(eventPlayer._hp_shields_ow2), HudPosition.RIGHT, 1, Color.WHITE, HudReeval.STRING)
+    hudSubheader(eventPlayer, "_hp_scalar = {}".format(eventPlayer._hp_scalar), HudPosition.RIGHT, 1, Color.WHITE, HudReeval.STRING)
     # hudSubheader(eventPlayer, "peacekeeper_distance = {}".format(eventPlayer.peacekeeper_distance), HudPosition.RIGHT, 1, Color.WHITE, HudReeval.STRING)
     # hudSubheader(eventPlayer, "_hp_reset = {}".format(eventPlayer._hp_reset), HudPosition.RIGHT, 1, Color.WHITE, HudReeval.STRING)
     # hudSubheader(eventPlayer, "_stat_reset = {}".format(eventPlayer._stat_reset), HudPosition.RIGHT, 1, Color.WHITE, HudReeval.STRING)

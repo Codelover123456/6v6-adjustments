@@ -34,14 +34,15 @@ def clearCustomHp():
     wait()
     eventPlayer.setMaxHealth(100)
     wait()
+    heal(eventPlayer, null, Math.INFINITY)
 
     eventPlayer._hp_health = 0
     eventPlayer._hp_armor = 0
     eventPlayer._hp_shields = 0
 
-    eventPlayer._hp_health_ow2 = eventPlayer.getMaxHealthOfType(Health.NORMAL)
-    eventPlayer._hp_armor_ow2 = eventPlayer.getMaxHealthOfType(Health.ARMOR)
-    eventPlayer._hp_shields_ow2 = eventPlayer.getMaxHealthOfType(Health.SHIELDS)
+    eventPlayer._hp_health_ow2 = 0
+    eventPlayer._hp_armor_ow2 = 0
+    eventPlayer._hp_shields_ow2 = 0
 
     eventPlayer._hp_scalar = 1
     
