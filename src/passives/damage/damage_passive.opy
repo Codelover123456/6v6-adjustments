@@ -3,7 +3,7 @@
 
 rule "[passives/damage/damage_passive.opy]: Remove DPS Passive":
     @Event playerTookDamage
-    @Condition attacker.getCurrentHero() in getDamageHeroes()
+    @Condition getAllHeroes()
     @Condition attacker != victim
     
     if victim.getCurrentHero() in getTankHeroes():

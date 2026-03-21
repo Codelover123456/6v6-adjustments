@@ -2,10 +2,10 @@ rule "Copyright (c) 2024 Overwatch 1 Emulator & 6v6 Adjustments. See github.com/
     disableInspector()
 
 # Useful constants and macros
-#!include "common/env.opy"
-#!include "common/constants/adj_constants.opy"
-#!include "common/constants/ow2_constants.opy"
-#!include "utilities/macro_functions.opy"
+#!include "common/constants/env.opy"
+#!include "common/constants/constants/adj_constants.opy"
+#!include "common/constants/constants/ow2_constants.opy"
+#!include "common/constants/macro_functions.opy"
 
 #!include "lobby/lobby.opy"
 

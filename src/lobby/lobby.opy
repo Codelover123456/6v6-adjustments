@@ -10,8 +10,8 @@ settings {
         "dataCenterPreference": "bestAvailable",
         "mapRotation": "afterGame",
         "spectatorSlots": 12,
-        #"team1Slots": 6,
-        #"team2Slots": 6,
+        "team1Slots": 6,
+        "team2Slots": 6,
         # "minimumLatencyInNs": 10000000,
         # "pauseGameOnDisconnect": true,
         "returnToLobby": "afterGame",
@@ -19,19 +19,159 @@ settings {
         "teamBalancing": "afterGame"
     },
     "gamemodes": {
-        "control": {
-            "enablePerks": false
+        "assault": {
+            "enabledMaps": [
+                "hanamura",
+                # "horizonLunarColony",
+                # "paris",
+                "templeOfAnubis",
+                "volskaya"
+            ]
         },
-        "escort": {
-            "enablePerks": false
-        },
+        #"control": {
+            #"enabledMaps": [
+                #{
+                #    "busan": [
+                #        "morning"
+                #    ]
+                #},
+                #{
+                #    "antarcticPeninsula": []
+                #},
+                #{
+                #    "ilios": [
+                #        "morning"
+                #    ]
+                #},
+                #{
+                #    "lijiangTower": [
+                #        "night"
+                #    ]
+                #},
+                #{
+                #    "nepal": [
+                #        "morning"
+                #    ]
+                #},
+                #{
+                #    "oasis": [
+                #        "evening"
+                #    ]
+                #},
+                # {
+                #     "samoa": []
+                # }
+            #]
+        #},
+        #"escort": {
+        #    "enabledMaps": [
+                # {
+                #     "circuitRoyal": [
+                #         "night"
+                #     ]
+                # },
+                #{
+                #    "dorado": [
+                #        "night"
+                #    ]
+                #},
+                #{
+                #    "havana": [
+                #        "morning"
+                #    ]
+                #},
+                #{
+                #    "rialto": [
+                #        "morning"
+                #    ]
+                #},
+                #{
+                #    "junkertown" : []
+                #},
+                #{
+                #    "route66": [
+                #        "morning"
+                #    ]
+                #},
+            #    {
+            #        "shambaliMonastery": []
+            #    },
+                #{
+                #    "watchpointGibraltar": [
+                #        "evening"
+                #    ]
+                #}
+            #]
+        #},
+        #"hybrid": {
+            #"enabledMaps": [
+                #{
+                #    "blizzWorld": [
+                #        "morning"
+                #    ]
+                #},
+                #{
+                #    "eichenwalde": [
+                #        "morning"
+                #    ]
+                #},
+                #{
+                #    "hollywood": [
+                #        "morning"
+                #    ]
+                #},
+                #{
+                #    "kingsRow": [
+                #        "night"
+                #    ]
+                #},
+                # {
+                #     "midtown": [
+                #         "morning"
+                #     ]
+                # },
+            #    {
+            #        "numbani": []
+            #    },
+                # {
+                #     "paraiso": [
+                #         "morning"
+                #     ]
+                # },
+            #]
+        #},
+        # "practiceRange": {
+        #     "enabledMaps": []
+        # },
         "flashpoint": {
-            "enabled": false,
-            "captureSpeed%": 75
+            "captureSpeed%": 75,
+            "scoringSpeed%": 100,
+            "enabledMaps": [
+                # {
+                #     "newJunkCity": []
+                # },
+                {
+                    "suravasa": []
+                },
+            ]
         },
-        "hybrid": {
-            "enablePerks": false
-        },
+        #"push": {
+        #    "enabledMaps": [
+                # {
+                #     "colosseo": [
+                #         "evening"
+                #     ]
+                # },
+                # {
+                #     "esperanca": []
+                # },
+                # {
+                #     "newQueenStreet": [
+                #         "morning"
+                #     ]
+                # },
+        #    ]
+        #},
     #    },
     #    "push": {},
         "general": {
@@ -55,6 +195,7 @@ settings {
             "jetpackCat",
             "vendetta",
             "hazard",
+            "mizuki",
             "wuyang"
         ],
             "ana": {
