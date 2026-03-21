@@ -52,23 +52,26 @@ def clearCustomHp():
 
 def applyCustomHp():
     @Name "[utilities/custom_hp.opy]: applyCustomHp()"
+    # Get OW2 default hp values.
+    eventPlayer._hp_health_ow2 = eventPlayer.getMaxHealthOfType(Health.NORMAL)
+    eventPlayer._hp_armor_ow2 = eventPlayer.getMaxHealthOfType(Health.ARMOR)
+    eventPlayer._hp_shields_ow2 = eventPlayer.getMaxHealthOfType(Health.SHIELDS)
 
-    if (eventPlayer.getMaxHealthOfType(Health.NORMAL) == eventPlayer._hp_health) and \
-       (eventPlayer.getMaxHealthOfType(Health.ARMOR) == eventPlayer._hp_armor) and \
-       (eventPlayer.getMaxHealthOfType(Health.SHIELDS) == eventPlayer._hp_shields):
+    if (eventPlayer._hp_health == eventPlayer._hp_health_ow2) and \
+       (eventPlayer._hp_armor == eventPlayer._hp_armor_ow2) and \
+       (eventPlayer._hp_shields == eventPlayer._hp_shields_ow2):
        return
 
-    # Find minimum hp scalar value that ensures
-    # the scaled health/armor/shields is less or equal to
-    # the desired custom health/armor/shield value
+    # Find minimum hp scalar value that ensures scaled health/armor/shields
+    # is less or equal to the desired custom health/armor/shield value
     eventPlayer._hp_scalar = \
         min(
             min(
-                (eventPlayer._hp_health/eventPlayer._hp_health_ow2) if eventPlayer._hp_health_ow2 > 0 else Math.INFINITY, 
-                (eventPlayer._hp_armor/eventPlayer._hp_armor_ow2)   if eventPlayer._hp_armor_ow2 > 0 else Math.INFINITY), 
+                (eventPlayer._hp_health/eventPlayer._hp_health_ow2) if eventPlayer._hp_health_ow2 > 0 else Math.INFINITY,
+                (eventPlayer._hp_armor/eventPlayer._hp_armor_ow2) if eventPlayer._hp_armor_ow2 > 0 else Math.INFINITY),
             (eventPlayer._hp_shields/eventPlayer._hp_shields_ow2) if eventPlayer._hp_shields_ow2 > 0 else Math.INFINITY)
 
-    # infinite hp scalar exception
+    # Abort on infinite hp scalar.
     if eventPlayer._hp_scalar == Math.INFINITY:
         return
 
@@ -81,3 +84,16 @@ def applyCustomHp():
         eventPlayer.addHealthPool(Health.ARMOR, (eventPlayer._hp_armor - eventPlayer.getMaxHealthOfType(Health.ARMOR)), true, false)
     if (eventPlayer._hp_shields - eventPlayer.getMaxHealthOfType(Health.SHIELDS)) >= 1:
         eventPlayer.addHealthPool(Health.SHIELDS, (eventPlayer._hp_shields - eventPlayer.getMaxHealthOfType(Health.SHIELDS)), true, false)
+
+
+# rule "[custom_hp.opy]: Remove Custom Health Conditions":
+#     @Event eachPlayer
+
+#     # Health pools persist between hero switching, so we remove it when player's switch or duplicate to another hero, or when D.Va switches between forms.
+#     waitUntil(eventPlayer.getCurrentHero() != evalOnce(eventPlayer.getCurrentHero()) or eventPlayer.getHeroOfDuplication() != evalOnce(eventPlayer.getHeroOfDuplication()) or (isHero(eventPlayer, Hero.DVA) and eventPlayer.isInAlternateForm() != evalOnce(eventPlayer.isInAlternateForm())), Math.INFINITY)
+
+#     clearCustomHp()
+
+#     wait()
+
+#     if RULE_CONDITION: goto RULE_START
