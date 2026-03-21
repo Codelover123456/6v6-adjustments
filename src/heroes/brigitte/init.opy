@@ -1,4 +1,4 @@
-#!mainFile "../../dev_main.opy"
+#!mainFile "../../main.opy"
 
 #!include "../../heroes/brigitte/bash.opy"
 #!include "../../heroes/brigitte/inspire.opy"

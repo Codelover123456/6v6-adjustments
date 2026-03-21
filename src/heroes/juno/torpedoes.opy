@@ -1,4 +1,4 @@
-#!mainFile "../../dev_main.opy"
+#!mainFile "../../main.opy"
 
 
 rule "[juno/init.opy]: Correct Pulsar Torpedo healing and damage":

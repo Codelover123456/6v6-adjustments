@@ -1,4 +1,4 @@
-#!mainFile "../../dev_main.opy"
+#!mainFile "../../main.opy"
 
 #!include "../../heroes/dva/boosters.opy"
 #!include "../../heroes/dva/defense_matrix.opy"

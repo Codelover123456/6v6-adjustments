@@ -1,4 +1,4 @@
-#!mainFile "../../dev_main.opy"
+#!mainFile "../../main.opy"
 
 
 rule "[mauga/cardiac.opy]: Remove Cardiac Overdrive allied damage reduction":

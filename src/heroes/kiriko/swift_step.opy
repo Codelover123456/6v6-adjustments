@@ -1,4 +1,4 @@
-#!mainFile "../../dev_main.opy"
+#!mainFile "../../main.opy"
 
 
 rule "[kiriko/swift_step.opy]: Force swift step cooldown after spawning":

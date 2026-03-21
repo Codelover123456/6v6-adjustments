@@ -1,4 +1,4 @@
-#!mainFile "../../dev_main.opy"
+#!mainFile "../../main.opy"
 
 
 rule "[orisa/javelin.opy]: Increase Javelin Spin movement speed":

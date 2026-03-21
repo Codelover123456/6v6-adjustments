@@ -1,4 +1,4 @@
-#!mainFile "../../dev_main.opy"
+#!mainFile "../../main.opy"
 
 
 rule "[junkerqueen/jagged_blade.opy]: Correct Jagged Blade impact damage":

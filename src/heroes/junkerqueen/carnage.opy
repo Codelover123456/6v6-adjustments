@@ -1,4 +1,4 @@
-#!mainFile "../../dev_main.opy"
+#!mainFile "../../main.opy"
 
 
 rule "[junkerqueen/carnage.opy]: Reduce Carnage damage":

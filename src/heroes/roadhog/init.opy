@@ -1,4 +1,4 @@
-#!mainFile "../../dev_main.opy"
+#!mainFile "../../main.opy"
 
 #!include "../../heroes/roadhog/breather.opy"
 #!include "../../heroes/roadhog/wholehog.opy"

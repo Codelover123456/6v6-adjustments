@@ -1,4 +1,4 @@
-#!mainFile "../../dev_main.opy"
+#!mainFile "../../main.opy"
 
 #!include "../../heroes/venture/excavator.opy"
 #!include "../../heroes/venture/drill_dash.opy"

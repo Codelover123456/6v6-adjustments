@@ -1,4 +1,4 @@
-#!mainFile "../../dev_main.opy"
+#!mainFile "../../main.opy"
 
 #!include "../../heroes/juno/torpedoes.opy"
 #!include "../../heroes/juno/orbital_ray.opy"

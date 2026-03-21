@@ -1,4 +1,4 @@
-#!mainFile "../../dev_main.opy"
+#!mainFile "../../main.opy"
 
 
 rule "[venture/tectonic_shock.opy]: Tectonic Shock logic":

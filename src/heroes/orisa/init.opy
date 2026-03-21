@@ -1,4 +1,4 @@
-#!mainFile "../../dev_main.opy"
+#!mainFile "../../main.opy"
 
 #!include "../../heroes/orisa/javelin.opy"
 #!include "../../heroes/orisa/fortify.opy"

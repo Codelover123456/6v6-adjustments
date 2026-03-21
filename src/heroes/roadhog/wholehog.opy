@@ -1,4 +1,4 @@
-#!mainFile "../../dev_main.opy"
+#!mainFile "../../main.opy"
 
 
 rule "[roadhog/wholehog.opy]: Disable abilities during wholehog":

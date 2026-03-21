@@ -1,4 +1,4 @@
-#!mainFile "../../dev_main.opy"
+#!mainFile "../../main.opy"
 
 #!include "../../heroes/sigma/accretion.opy"
 #!include "../../heroes/sigma/kinetic_grasp.opy"

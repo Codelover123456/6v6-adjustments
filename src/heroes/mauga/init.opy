@@ -1,4 +1,4 @@
-#!mainFile "../../dev_main.opy"
+#!mainFile "../../main.opy"
 
 #!include "../../heroes/mauga/cage_fight.opy"
 # !include "../../heroes/mauga/cardiac.opy"

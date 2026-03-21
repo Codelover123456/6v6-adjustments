@@ -1,4 +1,4 @@
-#!mainFile "../../dev_main.opy"
+#!mainFile "../../main.opy"
 
 
 rule "[ramattra/nemesis_form.opy]: Correct Nemesis Form armor and movement speed":

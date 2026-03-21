@@ -1,4 +1,4 @@
-#!mainFile "../../dev_main.opy"
+#!mainFile "../../main.opy"
 
 # Use 1 rule with if/else inside instead of 2 rules for performance
 rule "[illari/solar_rifle.opy]: Correct Solar Rifle damage":

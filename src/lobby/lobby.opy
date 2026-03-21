@@ -10,8 +10,8 @@ settings {
         "dataCenterPreference": "bestAvailable",
         "mapRotation": "afterGame",
         "spectatorSlots": 12,
-        "team1Slots": 6,
-        "team2Slots": 6,
+        #"team1Slots": 6,
+        #"team2Slots": 6,
         # "minimumLatencyInNs": 10000000,
         # "pauseGameOnDisconnect": true,
         "returnToLobby": "afterGame",
@@ -19,28 +19,21 @@ settings {
         "teamBalancing": "afterGame"
     },
     "gamemodes": {
-        "assault": {
-            "enabledMaps": []
-        },
         "control": {
-            "disabledMaps": [
-                "lijiangTowerLny"
-            ],
+            "enablePerks": false
         },
         "escort": {
+            "enablePerks": false
         },
         "flashpoint": {
-            "scoringSpeed%": 85,
+            "enabled": false,
+            "captureSpeed%": 75
         },
         "hybrid": {
-            "disabledMaps": [
-                "blizzWorldWinter",
-                "eichenwaldeHalloween",
-                "hollywoodHalloween",
-                "kingsRowWinter"
-            ],
+            "enablePerks": false
         },
-        "push": {},
+    #    },
+    #    "push": {},
         "general": {
             "heroLimit": "1PerTeam",
             "roleLimit": "2OfEachRolePerTeam",
@@ -52,7 +45,20 @@ settings {
     },
     "heroes": {
         "allTeams": {
+            "general": {
+        },
+        "disabledHeroes": [
+            "anran", 
+            "domina",
+            "emre",
+            "freja",
+            "jetpackCat",
+            "vendetta",
+            "hazard",
+            "wuyang"
+        ],
             "ana": {
+                "ammoClipSize%": percent(ADJ_ANA_AMMO_COUNT/OW2_ANA_AMMO_COUNT),
                 "ability1Cooldown%": percent(ADJ_ANA_SLEEP_DART_COOLDOWN_TIME/OW2_ANA_SLEEP_DART_COOLDOWN_TIME),
                 "ability2Cooldown%": percent(ADJ_ANA_BIOTIC_GRENADE_COOLDOWN/OW2_ANA_BIOTIC_GRENADE_COOLDOWN),
                 "passiveHealthRegen": false,
@@ -124,6 +130,7 @@ settings {
             #     "ultGen%": percent(OW2_HAZARD_ULT_COST/ADJ_HAZARD_ULT_COST)
             # },
             "illari": {
+                "ammoClipSize%": percent(ADJ_ILLARI_SOLAR_RIFLE_AMMO/OW2_ILLARI_AMMO_COUNT),
                 "ability2Cooldown%": percent(ADJ_ILLARI_PYLON_COOLDOWN/OW2_ILLARI_PYLON_COOLDOWN),
                 "health%": percent(ADJ_ILLARI_PYLON_HEALTH/OW2_ILLARI_PYLON_HEALTH), # for pylon hp
                 "passiveHealthRegen": false,
@@ -142,6 +149,7 @@ settings {
                 "ultGen%": percent(OW2_JUNKRAT_ULT_COST/ADJ_JUNKRAT_ULT_COST)
             },
             "juno": {
+                "ammoClipSize%": percent(ADJ_JUNO_MEDIGUN_AMMO/OW2_JUNO_MEDIGUN_AMMO),
                 "secondaryFireCooldown%": percent(ADJ_JUNO_TORPEDO_COOLDOWN/OW2_JUNO_TORPEDO_COOLDOWN),
                 "ability1Cooldown%": percent(ADJ_JUNO_BOOTS_COOLDOWN/OW2_JUNO_BOOTS_COOLDOWN),
                 "ability2Cooldown%": percent(ADJ_JUNO_RING_COOLDOWN/OW2_JUNO_RING_COOLDOWN),
@@ -155,6 +163,7 @@ settings {
                 "ultGen%": percent(OW2_KIRIKO_ULT_COST/ADJ_KIRIKO_ULT_COST)
             },
             "lifeweaver": {
+                "ammoClipSize%": percent(ADJ_LIFEWEAVER_HEALING_BLOSSOM_AMMO/OW2_LIFEWEAVER_HEAL_AMMO_COUNT),
                 "secondaryFireCooldown%": percent(ADJ_LIFEWEAVER_PLATFORM_COOLDOWN/OW2_LIFEWEAVER_PLATFORM_COOLDOWN),
                 "secondaryFireHealth%": percent(ADJ_LIFEWEAVER_PLATFORM_HEALTH/OW2_LIFEWEAVER_PLATFORM_HEALTH),
                 "ultHealth%": percent(ADJ_LIFEWEAVER_TREE_HEALTH/OW2_LIFEWEAVER_TREE_HEALTH),
@@ -188,6 +197,7 @@ settings {
                 "ultGen%": percent(OW2_MEI_ULT_COST/ADJ_MEI_ULT_COST)
             },
             "mercy": {
+                "ammoClipSize%": percent(ADJ_MERCY_AMMO/OW2_MERCY_AMMO),
                 "ability1Cooldown%": percent(ADJ_MERCY_GA_COOLDOWN/OW2_MERCY_GA_COOLDOWN),
                 "enablePassive": false,
                 "passiveHealthRegen": false,
@@ -246,6 +256,7 @@ settings {
                 "ultGen%": percent(OW2_SIGMA_ULT_COST/ADJ_SIGMA_ULT_COST),
             },
             "sojourn": {
+                "ammoClipSize%": percent(ADJ_SOJOURN_RAILGUN_AMMO/OW2_SOJOURN_AMMO_COUNT),
                 "ability1Cooldown%": percent(ADJ_SOJOURN_SLIDE_COOLDOWN/OW2_SOJOURN_SLIDE_COOLDOWN),
                 "passiveHealthRegen": false,
                 "ultGen%": percent(OW2_SOJOURN_ULT_COST/ADJ_SOJOURN_ULT_COST)

@@ -1,4 +1,4 @@
-#!mainFile "../../dev_main.opy"
+#!mainFile "../../main.opy"
 
 
 rule "[brigitte/repair_pack.opy]: Increase Repair Pack healing":

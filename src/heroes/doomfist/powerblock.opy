@@ -1,4 +1,4 @@
-#!mainFile "../../dev_main.opy"
+#!mainFile "../../main.opy"
 
 
 rule "[doomfist/powerblock.opy]: Reduce Power Block active duration":

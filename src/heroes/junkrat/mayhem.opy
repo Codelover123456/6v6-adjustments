@@ -1,4 +1,4 @@
-#!mainFile "../../dev_main.opy"
+#!mainFile "../../main.opy"
 # Junkrat has a few assorted damage rules combined into one file (hence the weird title)
 
 rule "[junkrat/mayhem.opy]: Correct Frag Launcher damage":

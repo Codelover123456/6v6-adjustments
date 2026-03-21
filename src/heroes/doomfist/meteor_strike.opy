@@ -1,4 +1,4 @@
-#!mainFile "../../dev_main.opy"
+#!mainFile "../../main.opy"
 
 
 rule "[doomfist/meteor_strike.opy]: Correct Meteor Strike and Doomfist melee damage":
