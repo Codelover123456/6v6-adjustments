@@ -2,11 +2,12 @@
 
 # Damage falloff derived from Marblr's "How Damage Falloff is Calculated" video: https://youtu.be/VL2VnkNJPpE
 
-playervar peacekeeper_distance
-playervar adj_cassidy_n
-playervar ow2_cassidy_n
-playervar adj_cassidy_falloff
-playervar ow2_cassidy_falloff
+playervar peacekeeper_pvar
+#!defineMember peacekeeper_distance peacekeeper_pvar[0]
+#!defineMember adj_cassidy_n peacekeeper_pvar[1]
+#!defineMember ow2_cassidy_n peacekeeper_pvar[2]
+#!defineMember adj_cassidy_falloff peacekeeper_pvar[3]
+#!defineMember ow2_cassidy_falloff peacekeeper_pvar[4]
 
 
 rule "[mccree/peacekeeper.opy]: Increase Peacekeeper falloff damage range":

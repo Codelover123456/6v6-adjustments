@@ -206,13 +206,13 @@ settings {
                 "ultGen%": percent(OW2_ANA_ULT_COST/ADJ_ANA_ULT_COST)
             },
             "ashe": {
-                "health%": percent(ADJ_ASHE_BOB_HEALTH/OW2_ASHE_BOB_HEALTH),
+                # "health%": percent(ADJ_ASHE_BOB_HEALTH/OW2_ASHE_BOB_HEALTH),
                 "passiveHealthRegen": false,
                 "ultGen%": percent(OW2_ASHE_ULT_COST/ADJ_ASHE_ULT_COST)
             },
             "baptiste": {
                 "ability1Cooldown%": percent(ADJ_BAPTISTE_REGEN_BURST_COOLDOWN/OW2_BAPTISTE_REGEN_BURST_COOLDOWN),
-                "health%": percent(ADJ_BAPTISTE_LAMP_HP/OW2_BAPTISTE_LAMP_HP),
+                # "health%": percent(ADJ_BAPTISTE_LAMP_HP/OW2_BAPTISTE_LAMP_HP),
                 "passiveHealthRegen": false,
                 "ultGen%": percent(OW2_BAPTISTE_ULT_COST/ADJ_BAPTISTE_ULT_COST)
             },
@@ -222,7 +222,7 @@ settings {
                 "ultGen%": percent(OW2_BASTION_ULT_COST/ADJ_BASTION_ULT_COST)
             },
             "brigitte": {
-                "health%": percent(ADJ_BRIGITTE_BARRIER_HEALTH/OW2_BRIGITTE_BARRIER_HEALTH),
+                # "health%": percent(ADJ_BRIGITTE_BARRIER_HEALTH/OW2_BRIGITTE_BARRIER_HEALTH),
                 "ability2Cooldown%": percent(ADJ_BRIGITTE_REPAIR_PACK_COOLDOWN/OW2_BRIGITTE_REPAIR_PACK_COOLDOWN),
                 "passiveHealthRegen": false,
                 "ultGen%": percent(OW2_BRIGITTE_ULT_COST/ADJ_BRIGITTE_ULT_COST)
@@ -234,7 +234,7 @@ settings {
             "dva": {
                 "secondaryFireMaximumTime%": percent(ADJ_DVA_MATRIX_DURATION/OW2_DVA_MATRIX_DURATION),
                 "secondaryFireRechargeRate%": percent(ADJ_DVA_MATRIX_RECHARGE/OW2_DVA_MATRIX_RECHARGE),
-                "health%": percent(ADJ_DVA_PILOT_HEALTH/OW2_DVA_PILOT_HEALTH), # for pilot dva hp
+                # "health%": percent(ADJ_DVA_PILOT_HEALTH/OW2_DVA_PILOT_HEALTH), # for pilot dva hp
                 "passiveHealthRegen": false,
                 "ultGen%": percent(OW2_DVA_ULT_COST/ADJ_DVA_ULT_COST)
             },
@@ -242,7 +242,7 @@ settings {
                 # for some reason, overpy thinks power block is ability 1 and slam is ability 2
                 "ability1Cooldown%": percent(ADJ_DOOMFIST_POWER_BLOCK_COOLDOWN/OW2_DOOMFIST_POWER_BLOCK_COOLDOWN),
                 "ability2Cooldown%": percent(ADJ_DOOMFIST_SEISMIC_SLAM_COOLDOWN/OW2_DOOMFIST_SEISMIC_SLAM_COOLDOWN),
-                "health%": percent(ADJ_DOOMFIST_BEST_DEFENSE/OW2_DOOMFIST_BEST_DEFENSE), # for passive overhealth
+                # "health%": percent(ADJ_DOOMFIST_BEST_DEFENSE/OW2_DOOMFIST_BEST_DEFENSE), # for passive overhealth
                 "passiveHealthRegen": false,
                 "ultGen%": percent(OW2_DOOMFIST_ULT_COST/ADJ_DOOMFIST_ULT_COST)
             },
@@ -327,13 +327,13 @@ settings {
                 # for berserker overhealth scales quadratically for whatever reason; someone pls explain
                 "ability2Healing%": percent(ADJ_MAUGA_CARDIAC_ALLIED_LIFESTEAL/OW2_MAUGA_CARDIAC_LIFESTEAL/OW2_MAUGA_CARDIAC_ALLIED_EFFECTIVENESS),
                 # healing is doubled to work at 100% for allies
-                "health%": percent(sqrt(OW2_MAUGA_BERSERKER_OVERHEALTH*ADJ_MAUGA_BERSERKER_OVERHEALTH)/OW2_MAUGA_BERSERKER_OVERHEALTH),
+                # "health%": percent(sqrt(OW2_MAUGA_BERSERKER_OVERHEALTH*ADJ_MAUGA_BERSERKER_OVERHEALTH)/OW2_MAUGA_BERSERKER_OVERHEALTH),
                 "passiveHealthRegen": false,
                 "ultGen%": percent(OW2_MAUGA_ULT_COST/ADJ_MAUGA_ULT_COST)
             },
             "mei": {
                 "primaryFireFreezeRate%": percent(ADJ_MEI_FREEZE_RATE/OW2_MEI_FREEZE_RATE),
-                "health%": percent(ADJ_MEI_ICEWALL_HP/OW2_MEI_ICEWALL_HP),
+                # "health%": percent(ADJ_MEI_ICEWALL_HP/OW2_MEI_ICEWALL_HP),
                 "passiveHealthRegen": false,
                 "ultGen%": percent(OW2_MEI_ULT_COST/ADJ_MEI_ULT_COST)
             },
@@ -364,7 +364,7 @@ settings {
                 "secondaryFireCooldown%": percent(ADJ_RAMATTRA_VOID_BARRIER_COOLDOWN/OW2_RAMATTRA_VOID_BARRIER_COOLDOWN),
                 "ability1Cooldown%": percent(ADJ_RAMATTRA_NEMESIS_COOLDOWN/OW2_RAMATTRA_NEMESIS_COOLDOWN),
                 "ability2Cooldown%": percent(ADJ_RAMATTRA_VORTEX_COOLDOWN/OW2_RAMATTRA_VORTEX_COOLDOWN),
-                "health%": percent(sqrt(ADJ_RAMATTRA_BARRIER_HEALTH/OW2_RAMATTRA_BARRIER_HEALTH)),
+                # "health%": percent(sqrt(ADJ_RAMATTRA_BARRIER_HEALTH/OW2_RAMATTRA_BARRIER_HEALTH)),
                 # as of S13, ramattra health scaling is quadrillatical
                 "ultDuration%": percent(ADJ_RAMATTRA_ANNIHILATION_DURATION/OW2_RAMATTRA_ANNIHILATION_DURATION),
                 "passiveHealthRegen": false,
@@ -414,18 +414,18 @@ settings {
                 "ultGen%": percent(OW2_SOMBRA_ULT_COST/ADJ_SOMBRA_ULT_COST)
             },
             "symmetra": {
-                "health%": percent(ADJ_SYMMETRA_TURRET_HEALTH/OW2_SYMMETRA_TURRET_HEALTH),
+                # "health%": percent(ADJ_SYMMETRA_TURRET_HEALTH/OW2_SYMMETRA_TURRET_HEALTH),
                 "passiveHealthRegen": false,
                 "ultGen%": percent(OW2_SYMMETRA_ULT_COST/ADJ_SYMMETRA_ULT_COST)
             },
             "torbjorn": {
-                "health%": percent(ADJ_TORBJORN_TURRET_HEALTH/OW2_TORBJORN_TURRET_HEALTH),
+                # "health%": percent(ADJ_TORBJORN_TURRET_HEALTH/OW2_TORBJORN_TURRET_HEALTH),
                 "passiveHealthRegen": false,
                 "ultGen%": percent(OW2_TORBJORN_ULT_COST/ADJ_TORBJORN_ULT_COST)
             },
             "tracer": {
                 "ability2Cooldown%": percent(ADJ_TRACER_RECALL_COOLDOWN/OW2_TRACER_RECALL_COOLDOWN),
-                "health%": percent(ADJ_TRACER_HEALTH/OW2_TRACER_HEALTH),
+                # "health%": percent(ADJ_TRACER_HEALTH/OW2_TRACER_HEALTH),
                 "passiveHealthRegen": false,
                 "ultGen%": percent(OW2_TRACER_ULT_COST/ADJ_TRACER_ULT_COST)
             },
@@ -436,7 +436,7 @@ settings {
             "venture": {
                 "ability1Duration%": percent(ADJ_VENTURE_BURROW_DURATION/OW2_VENTURE_BURROW_DURATION),
                 "secondaryFireCooldown%": percent(ADJ_VENTURE_DRILL_DASH_COOLDOWN/OW2_VENTURE_DRILL_DASH_COOLDOWN),
-                "health%": percent(ADJ_VENTURE_EXPLORER_SHIELDS/OW2_VENTURE_EXPLORER_SHIELDS),
+                # "health%": percent(ADJ_VENTURE_EXPLORER_SHIELDS/OW2_VENTURE_EXPLORER_SHIELDS),
                 "passiveHealthRegen": false,
                 "ultGen%": percent(OW2_VENTURE_ULT_COST/ADJ_VENTURE_ULT_COST),
             },
@@ -446,7 +446,7 @@ settings {
             },
             "winston": {
                 "ability1Cooldown%": percent(ADJ_WINSTON_JUMP_PACK_COOLDOWN_TIME/OW2_WINSTON_JUMP_PACK_COOLDOWN_TIME),
-                "health%": percent(ADJ_WINSTON_BARRIER_HEALTH/OW2_WINSTON_BARRIER_HEALTH),
+                # "health%": percent(ADJ_WINSTON_BARRIER_HEALTH/OW2_WINSTON_BARRIER_HEALTH),
                 "passiveHealthRegen": false,
                 "ultGen%": percent(OW2_WINSTON_ULT_COST/ADJ_WINSTON_ULT_COST)
             },
@@ -457,12 +457,12 @@ settings {
             "hammond": {
                 "ability1Kb%": percent(ADJ_WRECKING_BALL_FIREBALL_KB/OW2_WRECKING_BALL_FIREBALL_KB),
                 "ability3Cooldown%": percent(ADJ_WRECKING_BALL_PILEDRIVER_COOLDOWN_TIME/OW2_WRECKING_BALL_PILEDRIVER_COOLDOWN_TIME),
-                "health%": percent(ADJ_WRECKING_BALL_SHIELD_PER_TARGET/OW2_WRECKING_BALL_SHIELD_PER_TARGET),
+                # "health%": percent(ADJ_WRECKING_BALL_SHIELD_PER_TARGET/OW2_WRECKING_BALL_SHIELD_PER_TARGET),
                 "passiveHealthRegen": false,
                 "ultGen%": percent(OW2_WRECKING_BALL_ULT_COST/ADJ_WRECKING_BALL_ULT_COST),
             },
             "zarya": {
-                "health%": percent(ADJ_ZARYA_BARRIER_HEALTH/OW2_ZARYA_BARRIER_HEALTH),
+                # "health%": percent(ADJ_ZARYA_BARRIER_HEALTH/OW2_ZARYA_BARRIER_HEALTH),
                 "passiveHealthRegen": false,
                 "ultGen%": percent(OW2_ZARYA_ULT_COST/ADJ_ZARYA_ULT_COST)
             },

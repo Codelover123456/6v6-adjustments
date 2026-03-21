@@ -11,6 +11,8 @@ macro GAMDMODE_DESCRIPTION = (GAMEMODE_NAME" "GAMEMODE_VERSION" ("GAMEMODE_CODE"
                                "ecksdee#11729""\n"\
                                "Toastie#11770""\n"\
                                "LemonHead#11820""\n"\
+                               "viper#18545""\n"\
+                               "Darks#11729""\n"\
                                "\n"\
                                "OverPy codebase forked from""\n"\
                                "Overwatch 1 Emulator v1.12.2 (KHTG0)""\n"\
