@@ -1,4 +1,4 @@
-#!mainFile "../dev_main.opy"
+#!mainFile "../main.opy"
 
 
 globalvar SHOW_WATERMARK = createWorkshopSetting(bool, "Watermark", "Show Watermark", true, 0)

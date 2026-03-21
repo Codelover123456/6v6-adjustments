@@ -1,4 +1,4 @@
-#!mainFile "../dev_main.opy"
+#!mainFile "../main.opy"
 
 globalvar max_roles = [
     createWorkshopSetting(int[0:5], "Role limits", "Tank Role Cap", 2, 0),

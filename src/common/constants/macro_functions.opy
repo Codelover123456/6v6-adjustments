@@ -1,4 +1,4 @@
-#!mainFile "../dev_main.opy"
+#!mainFile "../main.opy"
 
 playervar macro_pvar
 #!defineMember _base_damage_scalar macro_pvar[0]
